@@ -190,20 +190,34 @@ margin-top:25px;
 }
 
 .card{
-background:white;
+background:#fff;
 padding:20px;
-border-radius:12px;
-box-shadow:0 4px 15px rgba(0,0,0,.08);
+border-radius:18px;
+  overflow:hidden;      /* Makes image follow rounded corners */
+box-shadow:0 10px 25px rgba(0,0,0,.08);
 transition:.3s;
 }
 
 .card:hover{
-transform:translateY(-5px);
+transform:translateY(-6px);
 }
-
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    display:block;
+}
+.card-content{
+    padding:24px;
+}
 .card h3{
-margin-bottom:15px;
+margin-bottom:16px;
 color:#1d2736;
+font-size:1.7rem;
+}
+  .card p{
+    line-height:1.8;
+    color:#555;
 }
 
 /* ===========================
@@ -363,15 +377,18 @@ Insert Beta Coefficient Plot
 
 <!-- ===================== -->
 
-<section id="models">
-<h2>Regression Models</h2>
-<div class="grid">
 <div class="card">
-<h3>Regression Model with Binary Feature</h3>
-<p>
-Uses a binary (0 or 1) independent variable to estimate the effect of two categories on a continuous outcome.
-</p>
+    <img src="images/binary.png" alt="Regression (Binary)">
+    <div class="card-content">
+        <h3>Regression Model with Binary Feature</h3>
+        <p>
+            Uses a binary (0 or 1) independent variable to estimate the effect
+            of two categories on a continuous outcome.
+        </p>
+    </div>
 </div>
+
+
   
 <div class="card">
 <h3>Regression Model with Continuous Feature</h3>
