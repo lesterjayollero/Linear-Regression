@@ -198,6 +198,71 @@ transition:.3s;
 padding:0;            /* Remove default padding */
 }
 
+  /* =====================================
+DETAILED MODEL SECTION
+===================================== */
+
+.model-detail{
+    display:grid;
+    grid-template-columns:55% 45%;
+    gap:25px;
+    align-items:start;
+    margin-top:30px;
+}
+
+.model-image img{
+    width:100%;
+    display:block;
+}
+
+.model-text{
+    padding:0;
+}
+
+.model-text h3{
+    font-size:34px;
+    margin-bottom:20px;
+    color:#1d2736;
+}
+
+.model-text p{
+    margin-bottom:18px;
+    line-height:1.7;
+    font-size:18px;
+    text-align:justify;
+}
+
+.model-text h4{
+    margin-top:18px;
+    margin-bottom:8px;
+    font-size:26px;
+}
+
+.blue{
+    color:#103a8c;
+}
+
+.green{
+    color:#00a651;
+}
+
+.red{
+    color:#d7191c;
+}
+
+.model-detail .equation{
+    margin:20px 0;
+    font-size:28px;
+    text-align:center;
+
+}
+
+.model-divider{
+    margin:70px 0;
+    border:none;
+    border-top:2px solid #ddd;
+
+}
 .card:hover{
 transform:translateY(-5px);
 }
@@ -270,7 +335,15 @@ letter-spacing:-2px;
 .hero p{
 font-size:20px;
 }
+.model-detail{
+    grid-template-columns:1fr;
 
+}
+
+.model-text h3{
+    font-size:28px;
+
+}
 }
 
 </style>
@@ -424,6 +497,46 @@ Regression coefficients indicate the expected change in the dependent variable f
           Includes interaction terms to determine whether the effect of one independent variable on the dependent variable changes depending on the value of another independent variable.
         </p>
     </div>
+</div>
+  <hr class="model-divider">
+<h2>Detailed Regression Models</h2>
+<div class="model-detail">
+    <!-- LEFT -->
+    <div class="model-image">
+        <img src="images/Regression(multivariate).png"
+             alt="Multivariate Regression">
+    </div>
+
+    <!-- RIGHT -->
+    <div class="model-text">
+        <h3>3. Multivariate Regression Model</h3>
+        <p>
+            Typically, travel time depends on more than one explanatory variable.
+            <br>In this case, travel time is modeled as a function of both traffic volume (continuous variable) and weather condition (binary).
+        </p>
+
+        <div class="equation">
+            Travel Time = 6.74 + 0.0190(Traffic Volume) + 7.16(Rain)
+        </div>
+        <h4 class="blue">Intercept (6.74)</h4>
+        <p>
+            Represents the predicted travel time when traffic volume is zero
+            and there is no rainfall.
+        </p>
+        <h4 class="green">Traffic Volume Coefficient (0.0190)</h4>
+        <p>
+            Indicates that travel time increases by 0.019 minutes for every
+            additional vehicle per hour while holding rainfall constant.
+        </p>
+        <h4 class="red">Rain Coefficient (7.16)</h4>
+        <p>
+            Indicates that rainy weather increases the travel time by
+            approximately 7.16 minutes while keeping traffic volume constant.
+          <br> <em>If there are two road segments carrying the same traffic volume, they are expected to differ by about 7.16 minutes if one experiences rainfall.</em>
+        </p>
+
+    </div>
+
 </div>
 </div>
 </section>
