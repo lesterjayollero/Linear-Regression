@@ -531,12 +531,45 @@ Regression coefficients indicate the expected change in the dependent variable f
             Represents the average predicted travel time during no rain weather (dry season). 
         </p>
 
-        <h4 class="green">Intercept (14.7)</h4>
+        <h4 class="green">Rain Coefficient (14.7)</h4>
         <p>
             Indicates that rainfall increases average travel time by approximately 14.7 mins.
         </p>
       </div>
     </div>
+
+  <div class="model-detail">
+    <!-- TOP -->
+    <div class="model-image">
+        <img src="images/Regression(continuous).png"
+             alt="Continuous Linear Regression">
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="model-text">
+        <h3>2.Regression Model with Continuous Feature</h3>
+        <p>
+           This model summarizes the relationship between traffic volume and corridor travel time.
+        </p>
+
+        <div class="equation">
+            Y = β₀ + β₁X₁ <br>
+            Travel Time = 24.6 + 0.0215(Traffic Volume)
+        </div>
+        
+      <div class="coef-group">
+      <h4 class="blue">Intercept (24.6)</h4>
+        <p>
+            Represents the average predicted travel time when traffic volume equals zero. <em>(Although this value has limited practical interpretation because roads rarely operate at zero traffic, it provides the baseline needed to define the regression line)</em>
+        </p>
+
+        <h4 class="green">Traffic Volume Coefficient(0.0215)</h4>
+        <p>
+            As the traffic volume increases, travel time is predicted to increase at an average rate of 0.0215 minutes per additional vehicle.
+        </p>
+      </div>
+    </div>
+  
 <div class="model-detail">
     <!-- LEFT -->
     <div class="model-image">
@@ -571,8 +604,7 @@ Regression coefficients indicate the expected change in the dependent variable f
         <h4 class="red">Rain Coefficient (7.16)</h4>
         <p>
             Indicates that rainy weather increases the travel time by
-            approximately 7.16 minutes while keeping traffic volume constant.<br> 
-          <br><em>If there are two road segments carrying the same traffic volume, they are expected to differ by about 7.16 minutes if one experiences rainfall.</em>
+            approximately 7.16 minutes while keeping traffic volume constant.<em>If there are two road segments carrying the same traffic volume, they are expected to differ by about 7.16 minutes if one experiences rainfall.</em>
         </p>
       </div>
     </div>
