@@ -404,7 +404,7 @@ SIDEBAR
 
 <li><a href="#models">Regression Models</a></li>
 
-<li><a href="#analysis">Stat Analysis</a></li>
+<li><a href="#analysis">Statistical Analysis</a></li>
 
 <li><a href="#application">Application</a></li>
 
@@ -430,108 +430,66 @@ REGRESSION
 
 <p>
 
-A Complete Academic Guide
+Introduction to Machine Learning
 
 </p>
 
 </div>
 
 <!-- ===================== -->
-
 <section id="intro">
-
 <h2>Introduction</h2>
-
 <p>
-
-Linear Regression is one of the most fundamental statistical techniques used to model the relationship between a dependent variable and one or more independent variables. It estimates the best-fitting linear relationship that minimizes prediction errors using the Least Squares Method.
-
+Linear Regression is one of the most fundamental statistical techniques used to model the relationship between a dependent variable and one or more independent variables. <br> 
+It estimates the best-fitting linear relationship that minimizes prediction errors using the Least Squares Method.
 </p>
-
 <p>
-
 Regression analysis is widely applied in transportation engineering, economics, finance, environmental science, healthcare, and machine learning for prediction, explanation, and trend analysis.
-
 </p>
 
 <div class="image">
-
 Insert Introduction Figure
-
 </div>
-
 </section>
-
+  
 <!-- ===================== -->
 
 <section id="equation">
-
 <h2>Regression Equation</h2>
-
 <p>
-
+Linear regression is a supervised* algorithm that learns to model a dependent variable, "y", as a function of some independent variables, "xi", by finding a line that best "fits" the data.
+<br>*Supervised algorithms predict a specific value based on historical data. <br>
 The general multiple linear regression equation is
-
 </p>
-
 <div class="equation">
-
 Y = β₀ + β₁X₁ + β₂X₂ + ··· + βₖXₖ + ε
-
 </div>
-
 <table>
-
 <tr>
-
 <th>Symbol</th>
-
 <th>Meaning</th>
-
 </tr>
-
 <tr>
-
 <td>Y</td>
-
-<td>Dependent Variable</td>
-
+<td>Dependent Variable (the thing we are trying to predict)</td>
 </tr>
-
 <tr>
-
 <td>X₁...Xₖ</td>
-
 <td>Independent Variables</td>
-
 </tr>
-
 <tr>
-
 <td>β₀</td>
-
 <td>Intercept</td>
-
 </tr>
-
 <tr>
-
 <td>β₁...βₖ</td>
-
-<td>Regression Coefficients</td>
-
+<td>Regression Coefficients aka Weights (These are the foundations of our model)</td>
 </tr>
-
 <tr>
-
 <td>ε</td>
-
-<td>Error Term</td>
-
+<td>Irreducible Error in our model (a term that collecs together all the unmodeled parts of our data)</td>
 </tr>
-
 </table>
-
 </section>
 
 <!-- ===================== -->
@@ -561,55 +519,33 @@ Insert Beta Coefficient Plot
 <h2>Regression Models</h2>
 
 <div class="grid">
-
 <div class="card">
-
-<h3>Simple Linear Regression</h3>
-
+<h3>Regression Model with Binary Feature</h3>
 <p>
-
 One predictor variable.
-
 </p>
-
 </div>
-
+  
 <div class="card">
-
-<h3>Multiple Linear Regression</h3>
-
+<h3>Regression Model with Continuous Feature</h3>
 <p>
-
 Two or more predictor variables.
-
 </p>
-
 </div>
 
 <div class="card">
-
-<h3>Polynomial Regression</h3>
-
+<h3>Multivariate Regression Model</h3>
 <p>
-
 Captures nonlinear relationships.
-
 </p>
-
 </div>
 
 <div class="card">
-
-<h3>Ridge & Lasso</h3>
-
+<h3>Regression Model with Interaction Terms</h3>
 <p>
-
 Regularized regression methods.
-
 </p>
-
 </div>
-
 </div>
 
 <div class="image">
