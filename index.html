@@ -222,7 +222,7 @@ DETAILED MODEL SECTION
 }
 
 .model-text h3{
-    font-size:18px;
+    font-size:20px;
     line-height:1.2;
     margin-bottom:8px;
     color:#1d2736;
@@ -236,8 +236,8 @@ DETAILED MODEL SECTION
 }
 
 .model-text h4{
-    font-size:20px;
-    margin-top:20px;
+    font-size:18px;
+    margin-top:13px;
     margin-bottom:8px;
 }
 
@@ -404,7 +404,7 @@ Regression analysis is widely applied in transportation engineering, economics, 
 </p>
 
 <div class="image">
-Insert Introduction Figure
+Under Construction
 </div>
 </section>
   
@@ -507,6 +507,37 @@ Regression coefficients indicate the expected change in the dependent variable f
     <hr class="model-divider">
 <h2>Explanation of the Linear Regression Models</h2>
 <div class="model-detail">
+    <!-- TOP -->
+    <div class="model-image">
+        <img src="images/Regression(binary).png"
+             alt="Binary Linear Regression">
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="model-text">
+        <h3>1.Regression Model with Binary Feature</h3>
+        <p>
+           This model summarizes the difference in average travel times between No Rain and With Rain Weather. 
+        </p>
+
+        <div class="equation">
+            Y = β₀ + β₁X₁ <br>
+            Travel Time = 48.4 + 14.7(Rain)
+        </div>
+        
+      <div class="coef-group">
+      <h4 class="blue">Intercept (48.4)</h4>
+        <p>
+            Represents the average predicted travel time during no rain weather (dry season). 
+        </p>
+
+        <h4 class="green">Intercept (14.7)</h4>
+        <p>
+            Indicates that rainfall increases average travel time by approximately 14.7 mins.
+        </p>
+      </div>
+    </div>
+<div class="model-detail">
     <!-- LEFT -->
     <div class="model-image">
         <img src="images/Regression(multivariate).png"
@@ -522,6 +553,7 @@ Regression coefficients indicate the expected change in the dependent variable f
         </p>
 
         <div class="equation">
+            Y = β₀ + β₁X₁ + β₂X₂<br>
             Travel Time = 6.74 + 0.0190(Traffic Volume) + 7.16(Rain)
         </div>
         
