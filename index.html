@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <title>Linear Regression</title>
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
 <style>
 
 *{
@@ -20,86 +16,57 @@ scroll-behavior:smooth;
 }
 
 body{
-
 font-family:'Inter',sans-serif;
 background:#f5f5f5;
 color:#222;
-
 }
 
 .wrapper{
-
 display:flex;
-
 }
 
 /* ===========================
 SIDEBAR
 =========================== */
-
 .sidebar{
-
 width:260px;
-
 height:100vh;
-
 position:sticky;
 top:0;
-
 background:#ffffff;
-
 padding:40px 25px;
-
 border-right:1px solid #ddd;
-
 overflow:auto;
-
 }
 
 .sidebar h2{
-
 font-size:22px;
 margin-bottom:25px;
-
 }
 
 .sidebar ul{
-
 list-style:none;
-
 }
 
 .sidebar li{
-
 margin-bottom:18px;
-
 }
 
 .sidebar a{
-
 text-decoration:none;
-
 color:#555;
-
 font-weight:500;
-
 transition:.25s;
-
 }
 
 .sidebar a:hover{
-
 color:#0b57d0;
 padding-left:8px;
-
 }
 
 .sidebar a.active{
-
 color:#0b57d0;
-
 font-weight:700;
-
 }
 
 /* ===========================
@@ -107,15 +74,10 @@ MAIN
 =========================== */
 
 main{
-
 flex:1;
-
 max-width:950px;
-
 margin:auto;
-
-padding:70px;
-
+padding:50px;
 }
 
 /* ===========================
@@ -123,37 +85,23 @@ HERO
 =========================== */
 
 .hero{
-
 text-align:center;
-
-margin-bottom:90px;
-
+margin-bottom:70px;
 }
 
 .hero h1{
-
 font-size:96px;
-
 font-weight:800;
-
 line-height:.9;
-
 letter-spacing:-5px;
-
 color:#1d2736;
-
 }
 
 .hero p{
-
-margin-top:40px;
-
-font-size:30px;
-
+margin-top:30px;
+font-size:20px;
 font-weight:300;
-
 color:#555;
-
 }
 
 /* ===========================
@@ -161,29 +109,19 @@ SECTIONS
 =========================== */
 
 section{
-
-margin-bottom:120px;
-
+margin-bottom:90px;
 }
 
 section h2{
-
-font-size:40px;
-
-margin-bottom:25px;
-
+font-size:30px;
+margin-bottom:15px;
 color:#1d2736;
-
 }
 
 section p{
-
 font-size:19px;
-
 line-height:1.9;
-
-margin-bottom:25px;
-
+margin-bottom:15px;
 }
 
 /* ===========================
@@ -191,23 +129,14 @@ Equation Box
 =========================== */
 
 .equation{
-
 background:white;
-
-padding:35px;
-
-font-size:36px;
-
+padding:15px;
+font-size:20px;
 text-align:center;
-
-border-radius:10px;
-
-margin:30px 0;
-
+border-radius:8px;
+margin:20px 0;
 font-family:Cambria;
-
 box-shadow:0 5px 20px rgba(0,0,0,.08);
-
 }
 
 /* ===========================
@@ -215,33 +144,21 @@ Table
 =========================== */
 
 table{
-
 width:100%;
-
 border-collapse:collapse;
-
-margin-top:30px;
-
+margin-top:20px;
 background:white;
-
 }
 
 th{
-
 background:#1d2736;
-
 color:white;
-
-padding:15px;
-
+padding:10px;
 }
 
 td{
-
-padding:15px;
-
+padding:10px;
 border-bottom:1px solid #ddd;
-
 }
 
 /* ===========================
@@ -249,25 +166,15 @@ Image Placeholder
 =========================== */
 
 .image{
-
 height:350px;
-
 background:white;
-
 border:2px dashed #cfcfcf;
-
 display:flex;
-
 align-items:center;
-
 justify-content:center;
-
-margin-top:35px;
-
-border-radius:10px;
-
+margin-top:25px;
+border-radius:8px;
 font-size:22px;
-
 color:#777;
 
 }
@@ -275,45 +182,28 @@ color:#777;
 /* ===========================
 Cards
 =========================== */
-
 .grid{
-
 display:grid;
-
 grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-
 gap:25px;
-
-margin-top:35px;
-
+margin-top:25px;
 }
 
 .card{
-
 background:white;
-
-padding:30px;
-
+padding:20px;
 border-radius:12px;
-
 box-shadow:0 4px 15px rgba(0,0,0,.08);
-
 transition:.3s;
-
 }
 
 .card:hover{
-
 transform:translateY(-5px);
-
 }
 
 .card h3{
-
 margin-bottom:15px;
-
 color:#1d2736;
-
 }
 
 /* ===========================
@@ -321,13 +211,9 @@ Footer
 =========================== */
 
 footer{
-
 text-align:center;
-
 padding:60px;
-
 font-size:15px;
-
 color:#777;
 
 }
@@ -337,43 +223,29 @@ Responsive
 =========================== */
 
 @media(max-width:900px){
-
 .wrapper{
-
 display:block;
-
 }
 
 .sidebar{
-
 width:100%;
 height:auto;
 position:relative;
-
 border-right:none;
-
 border-bottom:1px solid #ddd;
-
 }
 
 main{
-
-padding:40px;
-
+padding:30px;
 }
 
 .hero h1{
-
 font-size:58px;
-
 letter-spacing:-2px;
-
 }
 
 .hero p{
-
 font-size:20px;
-
 }
 
 }
@@ -393,21 +265,13 @@ SIDEBAR
 <aside class="sidebar">
 
 <h2>Contents</h2>
-
 <ul>
-
 <li><a href="#intro">Introduction</a></li>
-
 <li><a href="#equation">Regression Equation</a></li>
-
 <li><a href="#coefficients">Coefficients</a></li>
-
 <li><a href="#models">Regression Models</a></li>
-
 <li><a href="#analysis">Statistical Analysis</a></li>
-
 <li><a href="#application">Application</a></li>
-
 </ul>
 
 </aside>
@@ -417,21 +281,13 @@ CONTENT
 ======================== -->
 
 <main>
-
 <div class="hero">
-
 <h1>
-
 LINEAR<br>
-
 REGRESSION
-
 </h1>
-
 <p>
-
 Introduction to Machine Learning
-
 </p>
 
 </div>
@@ -441,7 +297,7 @@ Introduction to Machine Learning
 <h2>Introduction</h2>
 <p>
 Linear Regression is one of the most fundamental statistical techniques used to model the relationship between a dependent variable and one or more independent variables. <br> 
-It estimates the best-fitting linear relationship that minimizes prediction errors using the Least Squares Method.
+<br>It estimates the best-fitting linear relationship that minimizes prediction errors using the Least Squares Method.
 </p>
 <p>
 Regression analysis is widely applied in transportation engineering, economics, finance, environmental science, healthcare, and machine learning for prediction, explanation, and trend analysis.
@@ -457,8 +313,8 @@ Insert Introduction Figure
 <section id="equation">
 <h2>Regression Equation</h2>
 <p>
-Linear regression is a supervised* algorithm that learns to model a dependent variable, "y", as a function of some independent variables, "xi", by finding a line that best "fits" the data.
-<br>*Supervised algorithms predict a specific value based on historical data. <br>
+Linear regression is a supervised* algorithm that learns to model a dependent variable, <em>y</em>, as a function of some independent variables, <em>xi</em>, by finding a line that best "fits" the data.
+<br><em>*Supervised algorithms predict a specific value based on historical data.</em> <br>
 The general multiple linear regression equation is
 </p>
 <div class="equation">
@@ -471,7 +327,7 @@ Y = β₀ + β₁X₁ + β₂X₂ + ··· + βₖXₖ + ε
 </tr>
 <tr>
 <td>Y</td>
-<td>Dependent Variable (the thing we are trying to predict)</td>
+<td>Dependent Variable <em>(the thing we are trying to predict)</em></td>
 </tr>
 <tr>
 <td>X₁...Xₖ</td>
@@ -483,11 +339,11 @@ Y = β₀ + β₁X₁ + β₂X₂ + ··· + βₖXₖ + ε
 </tr>
 <tr>
 <td>β₁...βₖ</td>
-<td>Regression Coefficients aka Weights (These are the foundations of our model)</td>
+<td>Regression Coefficients aka Weights <em>(These are the foundations of our model)</em></td>
 </tr>
 <tr>
 <td>ε</td>
-<td>Irreducible Error in our model (a term that collecs together all the unmodeled parts of our data)</td>
+<td>Irreducible Error in our model <em>(a term that collecs together all the unmodeled parts of our data)</em></td>
 </tr>
 </table>
 </section>
@@ -495,29 +351,20 @@ Y = β₀ + β₁X₁ + β₂X₂ + ··· + βₖXₖ + ε
 <!-- ===================== -->
 
 <section id="coefficients">
-
 <h2>Coefficients</h2>
-
 <p>
-
 Regression coefficients indicate the expected change in the dependent variable for every one-unit increase in an independent variable while keeping all other predictors constant.
-
 </p>
 
 <div class="image">
-
 Insert Beta Coefficient Plot
-
 </div>
-
 </section>
 
 <!-- ===================== -->
 
 <section id="models">
-
 <h2>Regression Models</h2>
-
 <div class="grid">
 <div class="card">
 <h3>Regression Model with Binary Feature</h3>
@@ -554,131 +401,71 @@ Includes interaction terms to determine whether the effect of one independent va
 <!-- ===================== -->
 
 <section id="analysis">
-
 <h2>Statistical Analysis</h2>
-
 <table>
-
 <tr>
-
 <th>Statistic</th>
-
 <th>Purpose</th>
-
 </tr>
-
 <tr>
-
 <td>R²</td>
-
 <td>Explained Variance</td>
-
 </tr>
-
 <tr>
-
 <td>Adjusted R²</td>
-
 <td>Compare Models</td>
-
 </tr>
-
 <tr>
-
 <td>F-Test</td>
-
 <td>Overall Model Significance</td>
-
 </tr>
-
 <tr>
-
 <td>t-Test</td>
-
 <td>Coefficient Significance</td>
-
 </tr>
-
 <tr>
-
 <td>p-value</td>
-
 <td>Hypothesis Testing</td>
-
 </tr>
-
 <tr>
-
 <td>Confidence Interval</td>
-
 <td>Coefficient Precision</td>
-
 </tr>
-
 <tr>
-
 <td>VIF</td>
-
 <td>Multicollinearity</td>
-
 </tr>
-
 <tr>
-
 <td>Durbin-Watson</td>
-
 <td>Autocorrelation</td>
-
 </tr>
-
 <tr>
-
 <td>Breusch-Pagan</td>
-
 <td>Homoscedasticity</td>
-
 </tr>
-
 <tr>
-
 <td>Shapiro-Wilk</td>
-
 <td>Residual Normality</td>
-
 </tr>
-
 </table>
-
 <div class="image">
-
 Insert Residual Diagnostics Graph
-
 </div>
-
 </section>
 
 <!-- ===================== -->
 
 <section id="application">
-
 <h2>Application</h2>
-
 <p>
-
 Linear regression has extensive applications in transportation engineering, including travel time prediction, traffic flow estimation, speed prediction, crash frequency modeling, pavement deterioration forecasting, transit performance evaluation, travel demand forecasting, fuel consumption analysis, and intelligent transportation systems.
-
 </p>
 
 <div class="image">
-
 Insert Transportation Engineering Application Figure
-
 </div>
-
 </section>
-
 <footer>
-
 Academic Notes on Linear Regression • GitHub Pages
 
 </footer>
@@ -690,33 +477,20 @@ Academic Notes on Linear Regression • GitHub Pages
 <script>
 
 const sections=document.querySelectorAll("section");
-
 const navLinks=document.querySelectorAll(".sidebar a");
-
 window.addEventListener("scroll",()=>{
-
 let current="";
-
 sections.forEach(section=>{
-
 const sectionTop=section.offsetTop-120;
-
 if(pageYOffset>=sectionTop){
-
 current=section.getAttribute("id");
-
 }
-
 });
 
 navLinks.forEach(link=>{
-
 link.classList.remove("active");
-
 if(link.getAttribute("href")==="#"+current){
-
 link.classList.add("active");
-
 }
 
 });
