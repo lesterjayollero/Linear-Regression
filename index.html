@@ -204,38 +204,44 @@ DETAILED MODEL SECTION
 
 .model-detail{
     display:grid;
-    grid-template-columns:55% 45%;
-    gap:25px;
+    grid-template-columns:56% 44%;
+    gap:36px;
     align-items:start;
-    margin-top:30px;
+    margin: 40px 0 70px;
 }
 
 .model-image img{
     width:100%;
+     height:540px;
+    object-fit:contain;
     display:block;
 }
 
 .model-text{
-    padding:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    height:540px;
 }
 
 .model-text h3{
-    font-size:34px;
-    margin-bottom:20px;
+    font-size:28px;
+    line-height:1.15;
+    margin-bottom:18px;
     color:#1d2736;
 }
 
 .model-text p{
-    margin-bottom:18px;
-    line-height:1.7;
-    font-size:18px;
+    margin-bottom:12px;
+    line-height:1.55;
+    font-size:17px;
     text-align:justify;
 }
 
 .model-text h4{
-    margin-top:18px;
-    margin-bottom:8px;
-    font-size:26px;
+    margin-top:14px;
+    margin-bottom:6px;
+    font-size:22px;
 }
 
 .blue{
@@ -251,10 +257,9 @@ DETAILED MODEL SECTION
 }
 
 .model-detail .equation{
-    margin:20px 0;
-    font-size:28px;
-    text-align:center;
-
+    padding:18px;
+    margin:18px 0;
+    font-size:22px;
 }
 
 .model-divider{
@@ -262,6 +267,9 @@ DETAILED MODEL SECTION
     border:none;
     border-top:2px solid #ddd;
 
+}
+  .coef-group{
+    margin-top:auto;
 }
 .card:hover{
 transform:translateY(-5px);
@@ -520,7 +528,9 @@ Regression coefficients indicate the expected change in the dependent variable f
         <div class="equation">
             Travel Time = 6.74 + 0.0190(Traffic Volume) + 7.16(Rain)
         </div>
-        <h4 class="blue">Intercept (6.74)</h4>
+        
+      <div class="coef-group">
+      <h4 class="blue">Intercept (6.74)</h4>
         <p>
             Represents the predicted travel time when traffic volume is zero
             and there is no rainfall.
@@ -536,6 +546,7 @@ Regression coefficients indicate the expected change in the dependent variable f
             approximately 7.16 minutes while keeping traffic volume constant.
           <br> <em>If there are two road segments carrying the same traffic volume, they are expected to differ by about 7.16 minutes if one experiences rainfall.</em>
         </p>
+      </div>
     </div>
 </div>
 </section>
