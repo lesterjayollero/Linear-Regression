@@ -614,6 +614,47 @@ Regression coefficients indicate the expected change in the dependent variable f
         </p>
       </div>
     </div>
+
+<div class="model-detail">
+      <div class="model-text">
+        <h3>4. Regression Model with Interaction Terms</h3>
+      </div>
+    <!-- TOP -->
+    <div class="model-image">
+        <img src="images/Regression(interaction).png"
+             alt="Regression Model with Interaction Terms">
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="model-text">
+        <p>
+            If we believe that traffic volume affects travel time differently during rainy weather than during dry weather, we can include an interaction term (Traffic Volume x Rain) in the regression model.
+        </p>
+
+        <div class="equation">
+            Y = β₀ + β₁X₁ + β₂X₂ + β(X₁)(X₂)<br>
+            Travel time = 13.06 + 0.0132(Traffic Volume) + 4.92(Rain) +0.0060 (Traffic Volume x Rain)
+        </div>
+        
+      <div class="coef-group">
+      <h4 class="blue">Intercept (13.06)</h4>
+        <p>
+            Predicted travel time when traffic volume is zero and there is no rainfall.
+        </p>
+        <h4 class="green">Traffic Volume Coefficient (0.0132)</h4>
+        <p>
+            Indicates increase in travel time for every additional vehicle per hour during dry conditions.
+        </p>
+        <h4 class="red">Rain Coefficient (4.92)</h4>
+        <p>
+          Indicates that travel time caused by rainfall when the traffic volume is zero.
+            </p>
+        <h4 class="red">Traffic Volume x Rain Coefficient (0.0060)</h4>
+        <p>
+         Difference in the slope of traffic volume between dry and rainy weather conditions.
+            </p>
+      </div>
+    </div>
 </div>
 </section>
 
